@@ -1,8 +1,8 @@
 print('1:','add a cotact')
 print('2:','search contact')
 print('3:','delete contact')
-
-a=int(input('enter 1 , 2 or 3: '))
+print('4:','Give directory')
+a=int(input('enter 1 , 2, 3 or 4: '))
 
 if a==1:
     c=input('Name: ')
@@ -96,3 +96,9 @@ elif a==3:
 
         new_file.close
         print(delet1,'was succesfully deleted')
+        
+    elif a==4:
+            f1= open('contacts2.txt','r')
+            dir=f1.read()
+            print(dir)
+            
